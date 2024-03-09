@@ -13,7 +13,7 @@ namespace Product.Microservice.Controllers
         [HttpGet]
         public IEnumerable<ProductModel> Get()
         {
-            return Enumerable.Range(1, 5).Select(index => new ProductModel
+            return Enumerable.Range(1, 3).Select(index => new ProductModel
             {
                 CreationDate = DateTime.Now,
                 ID = new Random().Next()
@@ -30,5 +30,6 @@ namespace Product.Microservice.Controllers
                 ID = id,
             };
         }
+
     }
 }
