@@ -20,5 +20,15 @@ namespace Product.Microservice.Controllers
             })
             .ToArray();
         }
+
+        [HttpGet("{id}")]
+        public ProductModel Get(int id)
+        {
+            return new ProductModel()
+            {
+                CreationDate = DateTime.Now,
+                ID = id,
+            };
+        }
     }
 }

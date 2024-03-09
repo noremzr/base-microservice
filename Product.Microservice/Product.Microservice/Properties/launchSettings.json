@@ -36,9 +36,10 @@
       "environmentVariables": {
         "ASPNETCORE_ENVIRONMENT": "Development"
       },
-      "useSSL": true,
+      "useSSL": false,
       "httpPort": 150,
-      "sslPort": 483
+      "sslPort": 483,
+      "DockerfileRunArguments": "--network=kbs-network --name=product-microservice"
     }
   },
   "$schema": "https://json.schemastore.org/launchsettings.json",
